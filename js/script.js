@@ -11,9 +11,9 @@ createApp({
         axios
             .get(this.apiUrl)
             .then((response) => {
-                console.log(response);
+                // console.log(response);
                 this.todo = response.data;
-                console.log(this.todo)
+                // console.log(this.todo)
             });
     }
 }).mount('#app');
