@@ -1,0 +1,26 @@
+[
+    {
+        "first_name": "HTML",
+        "status": "notDone"
+    },
+    {
+        "first_name": "CSS",
+        "status": "notDone"
+    },
+    {
+        "first_name": "Responsive design",
+        "status": "notDone"
+    },
+    {
+        "first_name": "javascript",
+        "status": "notDone"
+    },
+    {
+        "first_name": "PHP",
+        "status": "notDone"
+    },
+    {
+        "first_name": "laravel",
+        "status": "notDone"
+    }
+]
