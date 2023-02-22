@@ -11,8 +11,9 @@
 <body>
     <main id="app">
         <div class="container">
+            <h1>TODO LIST</h1>
             <ul>
-                <li v-for="singleTodo in todo">
+                <li v-for="singleTodo in todo.data">
                     {{singleTodo.title}}
                 </li>
             </ul>
