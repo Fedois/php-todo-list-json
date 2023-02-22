@@ -13,9 +13,10 @@
     <main id="app">
         <div class="container">
             <h1>Todo list</h1>
+            
             <ul>
                 <li v-for="singleTodo in todo.data">
-                    {{singleTodo.title}}
+                    <p>{{singleTodo.title}}</p>
                     <span><i class="fa-solid fa-trash"></i></span>
                 </li>
             </ul>
