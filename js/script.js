@@ -23,8 +23,7 @@ createApp({
                 }
             }
             ).then((response) => {
-                // console.log(response);
-                this.todo = response.data;
+                this.todo.push(response.data);
                 console.log(response.data)
 
                 this.newTodo.title = '';
