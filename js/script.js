@@ -25,6 +25,10 @@ createApp({
             ).then((response) => {
                 console.log(response);
 
+                // this.todo.push({
+                //     title: this.newTodo.title 
+                // })
+
                 this.newTodo.title = '';
             });
         }

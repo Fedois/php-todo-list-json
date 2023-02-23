@@ -1,18 +1,19 @@
 <?php
 $todoList = file_get_contents('database.json');
 $todoListDecoded = json_decode($todoList, true);
-echo $todoList;
 
-$newTodo = [
-    'title' => $_POST['Todo'],
+header('content-type: application/json');
+
+$todoListDecoded[] = [
+    'title' => $_POST['todo']['title'],
     'done' => false
 ];
-$todoDecoded[] = $newTodo;
 
-$todoListEncoded = json_encode($todoDecoded);
+$todoListEncoded = json_encode($todoListDecoded);
 
 file_put_contents('database.json', $todoListEncoded);
-header('Content-Type: application/json');
+// header('Content-Type: application/json');
 
-echo $todoListEncoded;
+// echo json_encode($_POST);
+echo json_encode($_POST)
 ?>
