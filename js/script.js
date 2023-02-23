@@ -15,7 +15,7 @@ createApp({
     methods: {
         addTodo() {
             axios.post(this.createUrl, {
-                todo: this.newTodo
+                todocreated: this.newTodo
             }, {
                 headers: {
                     'Content-Type': 'multipart/form-data'

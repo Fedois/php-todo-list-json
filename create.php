@@ -5,7 +5,7 @@ $todoListDecoded = json_decode($todoList, true);
 header('content-type: application/json');
 
 $todoListDecoded[] = [
-    'title' => $_POST['todo']['title'],
+    'title' => $_POST['todocreated']['title'],
     'done' => false
 ];
 
