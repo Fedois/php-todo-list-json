@@ -24,9 +24,10 @@
             </ul>
             
             <div class="inputs">
-                <form action="" method="GET">
+                <form action="./create.php" method="POST" @submit.prevent="addTodo()">
                     <label for="text"></label>
-                    <input type="text" placeholder="inserisci elemento...">
+                    <input type="text" name="Todo" v-model="newTodo.title" placeholder="inserisci elemento...">
+                    
                     <button type="submit">inserisci</button>
                 </form>
             </div>
