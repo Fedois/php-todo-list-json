@@ -15,7 +15,7 @@
             <h1>Todo list</h1>
             
             <ul>
-                <li v-for="singleTodo in todo.data">
+                <li v-for="singleTodo in todo">
                     <p :class="{'done' : (singleTodo.done == true)}" @click="singleTodo.done = !singleTodo.done">
                         {{singleTodo.title}}
                     </p>

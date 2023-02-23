@@ -12,5 +12,7 @@ $todoListDecoded[] = [
 $todoListEncoded = json_encode($todoListDecoded);
 echo $todoListEncoded;
 
+header('Content-Type: application/json');
+
 file_put_contents('database.json', $todoListEncoded);
 ?>

@@ -14,7 +14,6 @@ createApp({
     },
     methods: {
         addTodo() {
-            
             axios.post(this.createUrl, {
                 todo: this.newTodo
             }, {
@@ -23,8 +22,8 @@ createApp({
                 }
             }
             ).then((response) => {
-                this.todo.push(response.data);
-                console.log(response.data)
+                this.todo = response.data;
+                console.log(this.todo)
 
                 this.newTodo.title = '';
             });
@@ -34,8 +33,7 @@ createApp({
         axios
             .get(this.apiUrl)
             .then((response) => {
-                console.log(response);
-                this.todo = response.data;
+                this.todo = response.data.data;
             });
     }
 }).mount('#app');
