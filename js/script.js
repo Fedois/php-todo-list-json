@@ -23,11 +23,9 @@ createApp({
                 }
             }
             ).then((response) => {
-                console.log(response);
-
-                // this.todo.push({
-                //     title: this.newTodo.title 
-                // })
+                // console.log(response);
+                this.todo = response.data;
+                console.log(response.data)
 
                 this.newTodo.title = '';
             });
