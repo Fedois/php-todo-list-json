@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    user-select: none;
 }
 ul{
     list-style: none;
@@ -43,6 +44,9 @@ h1{
     text-transform: capitalize;
     font-size: 5em;
 }
+p:hover{
+    cursor: pointer;
+}
 .inputs{
     overflow: hidden;
 }
@@ -59,4 +63,7 @@ form > input{
 }
 form > button{
     width: 25%;
+}
+.done{
+    text-decoration: line-through;
 }

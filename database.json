@@ -1,26 +1,26 @@
 [
     {
         "title": "HTML",
-        "status": "notDone"
+        "done": "false"
     },
     {
         "title": "CSS",
-        "status": "notDone"
+        "done": "false"
     },
     {
         "title": "Responsive design",
-        "status": "notDone"
+        "done": "false"
     },
     {
         "title": "javascript",
-        "status": "notDone"
+        "done": "false"
     },
     {
         "title": "PHP",
-        "status": "notDone"
+        "done": "false"
     },
     {
         "title": "laravel",
-        "status": "notDone"
+        "done": "false"
     }
 ]
